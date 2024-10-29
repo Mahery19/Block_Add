@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Simple Ad Blocker",
+    "version": "1.0",
+    "description": "A basic ad blocker extension for Edge",
+    "permissions": [
+      "declarativeNetRequest"
+    ],
+    "host_permissions": [
+      "https://*/*",
+      "http://*/*"
+    ],
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "ruleset_1",
+          "enabled": true,
+          "path": "rules.json"
+        }
+      ]
+    },
+    "action": {
+      "default_title": "Ad Blocker Active"
+    },
+    "icons": {
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  }
+  
